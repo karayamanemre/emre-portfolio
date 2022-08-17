@@ -1,5 +1,5 @@
 # Personal Portfolio
- My personel portfolio project
+ My personal portfolio project
 
 # Built With
 HTML
