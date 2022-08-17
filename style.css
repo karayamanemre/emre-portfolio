@@ -30,7 +30,6 @@ nav {
   margin-right: 24px;
 }
 
-
 .headline {
   display: flex;
   flex-direction: column;
@@ -40,7 +39,7 @@ nav {
   background-size: cover;
   border-radius: 0 0 0 60px;
   height: 718px;
-  padding: 114px, 24px, 114px, 24px
+  padding: 114px, 24px, 114px, 24px;
 }
 
 .headline-title {
