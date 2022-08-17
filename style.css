@@ -1,80 +1,79 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #e5e5e5;
-    font-family: 'Poppins', sans-serif;
+  background-color: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #fff;
-    height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  height: 48px;
 }
 
 #brand {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    text-decoration: none;
-    color: #6070FF;
-    margin-left: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #6070ff;
+  margin-left: 24px;
 }
 
 #burger-menu-icon {
-    margin-right: 24px;
+  margin-right: 24px;
 }
 
 
 .headline {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    background-image: url(img/headline-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0 0 0 60px;
-    height: 718px;
-    padding: 114px, 24px, 114px, 24px
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-image: url(img/headline-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 0 60px;
+  height: 718px;
+  padding: 114px, 24px, 114px, 24px
 }
 
 .headline-title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #172B4D;
-    margin: 206px 24px 12px 24px;
-  
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin: 206px 24px 12px 24px;
 }
 
 .headline-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 24px 12px 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 24px 12px 24px;
 }
 
 .headline-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7F8CFF;
-    text-decoration: none;
-    margin-left: 24px;
-    margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-decoration: none;
+  margin-left: 24px;
+  margin-bottom: 12px;
 }
 
 .headline-social-icons {
-    height: 20px;
-    width: 170.17px;
-    margin-left: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
+  height: 20px;
+  width: 170.17px;
+  margin-left: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
 }
