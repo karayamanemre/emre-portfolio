@@ -207,7 +207,7 @@ nav {
   border: 1px solid #6070ff;
   border-radius: 8px;
   background: none;
-  margin-bottom: 28px; 
+  margin-bottom: 28px;
 }
 
 .card-button {
@@ -239,7 +239,7 @@ nav {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .about-me-info {
@@ -337,7 +337,7 @@ nav {
 }
 
 hr {
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
   height: 1px;
   border: none;
 }
