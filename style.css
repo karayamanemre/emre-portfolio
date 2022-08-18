@@ -125,7 +125,7 @@ nav {
   background: url(img/Snapshoot-Portfolio4.png);
 }
 
-#card-title {
+.card-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -336,8 +336,6 @@ nav {
   margin-bottom: 9px;
 }
 
-hr {
-  background-color: #dfe1e6;
-  height: 1px;
-  border: none;
+.hr {
+  border-bottom: 1px solid #dfe1e6;
 }
