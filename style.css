@@ -39,7 +39,7 @@ nav {
   background-image: url(img/headline-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0 0 0 60px;
+  border-radius: 0 0 0 70px;
   height: 718px;
   padding: 114px, 24px, 114px, 24px;
 }
@@ -79,4 +79,265 @@ nav {
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+}
+
+.works {
+  margin-top: 114px;
+  margin-left: 24px;
+  margin-right: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 88px;
+}
+
+.works-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.card-img {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 295px;
+  height: 220px;
+}
+
+.card1 {
+  background: url(img/Snapshoot-Portfolio1.png);
+}
+
+.card2 {
+  background: url(img/Snapshoot-Portfolio2.png);
+}
+
+.card3 {
+  background: url(img/Snapshoot-Portfolio3.png);
+}
+
+.card4 {
+  background: url(img/Snapshoot-Portfolio4.png);
+}
+
+#card-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 12px;
+  margin-left: 16px;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.company {
+  margin-right: 12px;
+  margin-left: 16px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.circle {
+  margin-right: 12px;
+}
+
+.job {
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.year {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.card-info {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 20px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.tags {
+  display: flex;
+  margin-top: 12px;
+  list-style: none;
+  margin-left: 16px;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  margin-right: 8px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.btn {
+  color: #396df2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background: none;
+  margin-bottom: 28px; 
+}
+
+.card-button {
+  margin-left: 16px;
+  margin-top: 24px;
+  width: 124px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 1263px;
+  background-color: #fff;
+  border-top-right-radius: 70px;
+  margin-top: 114px;
+}
+
+.about-me-top {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 114px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.about-me-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172B4D;
+}
+
+.about-me-info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.about-me-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.about-me-social-icons {
+  height: 40px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.resume-button {
+  width: 162px;
+  height: 48px;
+}
+
+.about-me-list {
+  margin-top: 36px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.skills {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 12px;
+}
+
+.down-arrow {
+  margin-right: 40px;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.right-arrow {
+  margin-top: 30px;
+  margin-right: 42px;
+  margin-bottom: 30px;
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+}
+
+.language-names {
+  margin-left: 16px;
+}
+
+.language-image {
+  margin-left: 12px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+hr {
+  background-color: #DFE1E6;
+  height: 1px;
+  border: none;
 }
