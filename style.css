@@ -183,7 +183,6 @@ nav {
   display: flex;
   float: left;
   clear: both;
-  position: absolute;
   margin-top: 12px;
   list-style: none;
   margin-left: 16px;
