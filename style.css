@@ -181,6 +181,9 @@ nav {
 
 .tags {
   display: flex;
+  float: left;
+  clear: both;
+  position: absolute;
   margin-top: 12px;
   list-style: none;
   margin-left: 16px;
@@ -228,6 +231,8 @@ nav {
 }
 
 .card-button {
+  float: left;
+  clear: both;
   margin-left: 16px;
   margin-top: 24px;
   width: 124px;
