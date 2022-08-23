@@ -368,18 +368,32 @@ nav {
 .contact {
   background-color: #6070ff;
   background-image: url(img/contact-form-shapes-mobile.svg);
+  background-position: right;
   border-top-left-radius: 60px;
   background-repeat: no-repeat;
   text-align: center;
+  height: auto;
+  width: 375px;
 }
 
 .contact-container h2 {
   color: white;
+  margin-top: 103px;
+  margin-bottom: 12px;
 }
 
 .contact-container form {
   display: flex;
   flex-direction: column;
+}
+
+.contact-container p {
+  margin-bottom: 55px;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-size: 20px;
+  font-weight: 400px;
+  color: #ebebff;
 }
 
 .contact-element {
