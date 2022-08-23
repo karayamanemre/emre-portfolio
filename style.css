@@ -253,7 +253,7 @@ nav {
   margin-right: 24px;
 }
 
-.about-me-title, .contact-container h2 {
+.about-me-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -422,11 +422,12 @@ textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
+  color: #b3bac5;
 }
 
 .contact-btn {
   float: left;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -436,5 +437,3 @@ textarea {
   background-color: white;
   padding: 12px, 16px, 12px, 16px;
 }
-
-
