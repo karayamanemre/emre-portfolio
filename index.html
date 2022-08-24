@@ -8,29 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <main>
         <header>
             <nav>
-                <a href="#" id="brand">Emre Karayaman</a>
-                <img src="img/burger-icon.png" alt="menu-icon" id="burger-menu-icon">
+                <a href="#headline" id="brand">Emre Karayaman</a>
+                <ul class="wide wide-nav">
+                    <li class="nav-links">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <img class="mobile" src="img/burger-icon.png" alt="menu-icon" id="burger-menu-icon">
             </nav>
         </header>
-        <section class="headline">
+        <section class="headline" id="headline">
             <h1 class="headline-title">I’m Emre<br>Glad to see you!</h1>
             <p class="headline-text">I’m a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             <a class="headline-link" href="#">LET'S CONNECT</a>
             <ul class="headline-social-icons">
-                <li><a href="#"><img src="img/twitter-icon.png" alt="twitter"></a></li>
-                <li><a href="#"><img src="img/linkedin-icon.png" alt="linkedin"></a></li>
-                <li><a href="#"><img src="img/medium-icon.png" alt="medium"></a></li>
-                <li><a href="#"><img src="img/git-icon.png" alt="github"></a></li>
+                <li><a href="https://twitter.com/KarayamanEmre" target="_blank" rel="noopener"><img src="img/twitter-icon.png" alt="twitter"></a></li>
+                <li><a href="https://www.linkedin.com/in/emre-karayaman-a7b45b243/" target="_blank" rel="noopener"><img src="img/linkedin-icon.png" alt="linkedin"></a></li>
+                <li><a href="https://medium.com/@emre.karayaman" target="_blank" rel="noopener"><img src="img/medium-icon.png" alt="medium"></a></li>
+                <li><a href="https://github.com/karayamanemre" target="_blank" rel="noopener"><img src="img/git-icon.png" alt="github"></a></li>
                 <li><a href="#"><img src="img/angellist-icon.png" alt="angellist"></a></li>
             </ul>
         </section>
     </main>
-
-    <section class="works">
+    <section class="works" id="portfolio">
         <div class="works-card">
             <div class="card-img card1">
             </div>
@@ -52,13 +61,11 @@
                 <button class="btn card-button" type="button">See Project</button>
             </div>
         </div>
-
-        <div class="works-card">
+        <div class="works-card card-reverse">
             <div class="card-img card2">
             </div>
             <div class="card-text">
-                <h2 class="card-title">Multi-Post
-Stories</h2>
+                <h2 class="card-title">Multi-Post Stories</h2>
                 <ul class="card-details">
                     <li class="company">CANOPY</li>
                     <li class="circle"><img src="img/circle.png" alt="circle"></li>
@@ -75,7 +82,6 @@ Stories</h2>
                 <button class="btn card-button" type="button">See Project</button>
             </div>
         </div>
-
         <div class="works-card">
             <div class="card-img card3">
             </div>
@@ -97,13 +103,11 @@ Stories</h2>
                 <button class="btn card-button" type="button">See Project</button>
             </div>
         </div>
-
-        <div class="works-card">
+        <div class="works-card card-reverse">
             <div class="card-img card4">
             </div>
             <div class="card-text">
-                <h2 class="card-title">Multi-Post
-Stories</h2>
+                <h2 class="card-title">Multi-Post Stories</h2>
                 <ul class="card-details">
                     <li class="company">CANOPY</li>
                     <li class="circle"><img src="img/circle.png" alt="circle"></li>
@@ -121,19 +125,18 @@ Stories</h2>
             </div>
         </div>
     </section>
-
-    <section class="about-me">
+    <section class="about-me" id="about">
         <div class="about-me-top">
             <h2 class="about-me-title">About<br>Myself</h2>
             <p class="about-me-info">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <a class="about-me-link" href="#"><h3>LET'S CONNECT</h3></a>
             <ul class="about-me-social-icons">
-                <li><a href="#"><img src="img/git-icon.png" alt="github"></a></li>
-                <li><a href="#"><img src="img/linkedin-icon.png" alt="linkedin"></a></li>
+                <li><a href="https://twitter.com/KarayamanEmre" target="_blank" rel="noopener"><img src="img/twitter-icon.png" alt="twitter"></a></li>
+                <li><a href="https://www.linkedin.com/in/emre-karayaman-a7b45b243/" target="_blank" rel="noopener"><img src="img/linkedin-icon.png" alt="linkedin"></a></li>
+                <li><a href="https://medium.com/@emre.karayaman" target="_blank" rel="noopener"><img src="img/medium-icon.png" alt="medium"></a></li>
+                <li><a href="https://github.com/karayamanemre" target="_blank" rel="noopener"><img src="img/git-icon.png" alt="github"></a></li>
                 <li><a href="#"><img src="img/angellist-icon.png" alt="angellist"></a></li>
-                <li><a href="#"><img src="img/twitter-icon.png" alt="twitter"></a></li>
-                <li><a href="#"><img src="img/medium-icon.png" alt="medium"></a></li>
-            </ul>
+             </ul>
             <button class="btn resume-button" type="button">Get my resume</button>
         </div>
         <div class="about-me-list">
@@ -170,7 +173,7 @@ Stories</h2>
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="contact-heading">Contact Me</h2>
         <p class="contact-text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         <form class="contact-form" action="https://formspree.io/f/xzbwzdvd" method="post" id="form">
