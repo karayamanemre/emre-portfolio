@@ -34,9 +34,8 @@ header {
   top: 0;
   z-index: 1;
   opacity: 0.9;
-  box-shadow: 0px 0px 16px 0px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 0 16px 0 rgba(64, 83, 252, 0.24);
 }
-
 
 .wide-nav {
   margin-right: 154px;
@@ -472,15 +471,15 @@ textarea {
   .card1 {
     background: url(img/Snapshoot-Portfolio-Mobile1.png);
   }
-  
+
   .card2 {
     background: url(img/Snapshoot-Portfolio-Mobile2.png);
   }
-  
+
   .card3 {
     background: url(img/Snapshoot-Portfolio-Mobile3.png);
   }
-  
+
   .card4 {
     background: url(img/Snapshoot-Portfolio-Mobile4.png);
   }
@@ -580,7 +579,8 @@ textarea {
     line-height: 24px;
   }
 
-  .job, .year {
+  .job,
+  .year {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -599,15 +599,15 @@ textarea {
   .card1 {
     background: url(img/Snapshoot-Portfolio1.png);
   }
-  
+
   .card2 {
     background: url(img/Snapshoot-Portfolio2.png);
   }
-  
+
   .card3 {
     background: url(img/Snapshoot-Portfolio3.png);
   }
-  
+
   .card4 {
     background: url(img/Snapshoot-Portfolio4.png);
   }
@@ -622,7 +622,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 447px;
     height: 392px;
@@ -674,7 +674,7 @@ textarea {
     width: 122px;
     justify-content: space-around;
   }
-  
+
   .contact {
     background-color: #6070ff;
     background-image: url(img/contact-form-shapes.svg);
@@ -687,7 +687,8 @@ textarea {
     width: 569px;
   }
 
-  .contact-element, textarea {
+  .contact-element,
+  textarea {
     width: 447px;
   }
 
@@ -697,4 +698,3 @@ textarea {
     align-items: center;
   }
 }
-
