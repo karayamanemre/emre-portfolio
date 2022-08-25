@@ -518,8 +518,8 @@ textarea {
     letter-spacing: 0.37px;
     color: #091e42;
     margin: 300px 0 12px 260px;
-    -webkit-animation: headline-track-in 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	          animation: headline-track-in 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    -webkit-animation: headline-track-in 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+	          animation: headline-track-in 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
   }
 
   .headline-text {
