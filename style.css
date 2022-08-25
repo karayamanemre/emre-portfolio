@@ -234,6 +234,8 @@ nav {
   background: none;
   cursor: pointer;
   background-color: white;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 .btn:hover {
