@@ -518,6 +518,8 @@ textarea {
     letter-spacing: 0.37px;
     color: #091e42;
     margin: 300px 0 12px 260px;
+    -webkit-animation: headline-track-in 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	          animation: headline-track-in 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
   }
 
   .headline-text {
@@ -699,5 +701,18 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@keyframes headline-track-in {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
   }
 }
