@@ -66,9 +66,6 @@ nav {
   text-decoration: none;
   color: #6070ff;
   margin-left: 24px;
-  animation-name: headline-track-in;
-  animation-duration: 1s;
-  animation-delay: 0.5s;
 }
 
 #burger-menu-icon {
@@ -423,6 +420,10 @@ nav {
 .contact-form {
   display: flex;
   flex-direction: column;
+}
+
+label {
+  display: none;
 }
 
 .contact-element {
