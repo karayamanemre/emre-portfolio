@@ -25,10 +25,6 @@ a:hover {
   filter: brightness(0.8);
 }
 
-a:visited {
-  color: none;
-}
-
 header {
   position: fixed;
   width: 100%;
@@ -103,8 +99,8 @@ nav {
 .overlay {
   position: fixed;
   z-index: 99;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(55, 70, 255, 0.8);
@@ -120,8 +116,7 @@ nav {
 }
 
 .mobile-nav-items {
-  margin-left: 20px;
-  margin-top: -100px;
+  margin-left: 28px;
 }
 
 #nav-1,
@@ -130,7 +125,7 @@ nav {
   margin-bottom: 40px;
 }
 
-.nav-links {
+.nav-mobile-links {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -146,7 +141,7 @@ nav {
   background-size: cover;
   border-radius: 0 0 0 70px;
   height: 718px;
-  padding: 114px, 24px, 114px, 24px;
+  padding: 0 24px 114px 24px;
 }
 
 .headline-title {
@@ -530,7 +525,7 @@ textarea {
   height: 48px;
   width: 140px;
   background-color: white;
-  padding: 12px, 16px, 12px, 16px;
+  padding: 12px 16px 12px 16px;
 }
 
 @media only screen and (max-width: 768px) {
