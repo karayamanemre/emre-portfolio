@@ -12,6 +12,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -83,7 +87,7 @@ nav {
 }
 
 .change .bar1 {
-  transform: rotate(45deg) translate(10px);
+  transform: rotate(45deg) translateY(9.5px);
   background-color: #fff;
 }
 
@@ -92,7 +96,7 @@ nav {
 }
 
 .change .bar3 {
-  transform: rotate(-45deg) translate(8.5px);
+  transform: rotate(-45deg) translateY(-9.5px);
   background-color: #fff;
 }
 

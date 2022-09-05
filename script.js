@@ -1,3 +1,4 @@
+const body = document.querySelector('body');
 const menuBars = document.getElementById('menu-bars');
 const overlay = document.getElementById('overlay');
 const nav1 = document.getElementById('nav-1');
@@ -13,6 +14,7 @@ function toggleNav() {
   } else {
     overlay.classList.replace('overlay-slide-right', 'overlay-slide-left');
   }
+  body.classList.toggle('overflow');
 }
 
 menuBars.addEventListener('click', toggleNav);
