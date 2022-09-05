@@ -83,11 +83,11 @@ nav {
   height: 2px;
   background-color: #6070ff;
   margin-bottom: 5px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .change .bar1 {
-  transform: rotate(45deg) translateY(9.5px);
+  transform: rotate(45deg) translateY(10px);
   background-color: #fff;
 }
 
@@ -96,7 +96,7 @@ nav {
 }
 
 .change .bar3 {
-  transform: rotate(-45deg) translateY(-9.5px);
+  transform: rotate(-45deg) translateY(-10px);
   background-color: #fff;
 }
 
@@ -109,6 +109,7 @@ nav {
   height: 100vh;
   background-color: rgba(55, 70, 255, 0.8);
   backdrop-filter: blur(5px);
+  transition: 0.6s;
 }
 
 .overlay-slide-right {
@@ -116,7 +117,7 @@ nav {
 }
 
 .overlay-slide-left {
-  transform: translateX(-100vw);
+  transform: translateX(100vw);
 }
 
 .mobile-nav-items {
@@ -327,7 +328,6 @@ nav {
 .about-me {
   display: flex;
   flex-direction: column;
-  width: 99vw;
   height: 1263px;
   background-color: #fff;
   border-top-right-radius: 70px;
@@ -524,7 +524,7 @@ textarea {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 1rem;
   line-height: 24px;
   height: 48px;
   width: 140px;
