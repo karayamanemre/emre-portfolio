@@ -319,6 +319,7 @@ nav {
 .btn img {
   filter: brightness(100%);
   transition-duration: 0.9s;
+  margin-left: 13px;
 }
 
 .btn:hover img {
@@ -359,9 +360,9 @@ nav {
 }
 
 .modal {
-  height: calc(100vh - 150px);
   background-color: #fff;
   border-radius: 16px;
+  margin-bottom: 50px;
 }
 
 .modal > .card-details {
@@ -413,6 +414,7 @@ nav {
   font-weight: 400;
   line-height: 30px;
   background-color: #fff;
+  border-radius: 16px;
 }
 
 .tag-btns {
@@ -560,6 +562,11 @@ nav {
 
 .hr {
   border-bottom: 1px solid #dfe1e6;
+}
+
+.modal-hr {
+  padding-top: 21px;
+  border-top: 1px solid #dfe1e6;
 }
 
 .contact {
@@ -792,8 +799,7 @@ textarea {
     background-color: #fff;
     padding-top: 59px;
     padding-bottom: 59px;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
+    border-radius: 16px;
   }
 
   .modal-info {

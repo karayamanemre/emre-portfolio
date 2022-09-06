@@ -32,12 +32,7 @@ const portfolio = [
     job: 'Back End Dev',
     year: '2015',
     cardInfo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    htmlTag: 'html',
-    cssTag: 'css',
-    javascriptTag: 'javascript',
-    githubTag: 'github',
-    rubyTag: 'ruby',
-    bootstrapTag: 'bootstrap',
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
     buttonText: 'See More',
     modalInfo: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     modalSeeButtonText: 'See Live',
@@ -54,12 +49,7 @@ const portfolio = [
     job: 'Back End Dev',
     year: '2015',
     cardInfo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    htmlTag: 'html',
-    cssTag: 'css',
-    javascriptTag: 'javascript',
-    githubTag: 'github',
-    rubyTag: 'ruby',
-    bootstrapTag: 'bootstrap',
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
     buttonText: 'See More',
     modalInfo: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     modalSeeButtonText: 'See Live',
@@ -76,12 +66,7 @@ const portfolio = [
     job: 'Back End Dev',
     year: '2015',
     cardInfo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    htmlTag: 'html',
-    cssTag: 'css',
-    javascriptTag: 'javascript',
-    githubTag: 'github',
-    rubyTag: 'ruby',
-    bootstrapTag: 'bootstrap',
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
     buttonText: 'See More',
     modalInfo: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     modalSeeButtonText: 'See Live',
@@ -98,12 +83,7 @@ const portfolio = [
     job: 'Back End Dev',
     year: '2015',
     cardInfo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    htmlTag: 'html',
-    cssTag: 'css',
-    javascriptTag: 'javascript',
-    githubTag: 'github',
-    rubyTag: 'ruby',
-    bootstrapTag: 'bootstrap',
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
     buttonText: 'See More',
     modalInfo: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
     modalSeeButtonText: 'See Live',
@@ -133,9 +113,9 @@ Array.from(portfolioSection.children).forEach((child, index) => {
       </ul>
       <p class="card-info">${portfolio[index].cardInfo}</p>
       <ul class="tags">
-        <li class="tag">${portfolio[index].htmlTag}</li>
-        <li class="tag">${portfolio[index].cssTag}</li>
-        <li class="tag">${portfolio[index].javascriptTag}</li>
+        <li class="tag">${portfolio[index].technologies[0]}</li>
+        <li class="tag">${portfolio[index].technologies[1]}</li>
+        <li class="tag">${portfolio[index].technologies[2]}</li>
       </ul>
       <button class="btn card-button" id="${[index]}">${portfolio[index].buttonText}</button>
     </div>
@@ -170,19 +150,21 @@ openModal.forEach((element) => {
           <p class="modal-info">${portfolio[element.id].modalInfo}</p>
           <div class="tag-btns">
             <ul class="modal-tags">
-              <li class="tag">${portfolio[element.id].htmlTag}</li>
-              <li class="tag">${portfolio[element.id].cssTag}</li>
-              <li class="tag">${portfolio[element.id].javascriptTag}</li>
+              <li class="tag">${portfolio[element.id].technologies[0]}</li>
+              <li class="tag">${portfolio[element.id].technologies[1]}</li>
+              <li class="tag">${portfolio[element.id].technologies[2]}</li>
             </ul>
             <ul class="modal-tags">
-              <li class="github-tag tag">${portfolio[element.id].githubTag}</li>
-              <li class="ruby-tag tag">${portfolio[element.id].rubyTag}</li>
-              <li class="bootstrap-tag tag">${portfolio[element.id].bootstrapTag}</li>
+              <li class="github-tag tag">${portfolio[element.id].technologies[3]}</li>
+              <li class="ruby-tag tag">${portfolio[element.id].technologies[4]}</li>
+              <li class="bootstrap-tag tag">${portfolio[element.id].technologies[5]}</li>
             </ul>
             <div class="modal-btns">
-              <button class="btn">See Live <img src="img/live-icon.svg" alt="live"></button>
-              <button class="btn">See Source <img src="img/github-icon.svg" alt="github"></button>
-            </div>
+              <div class="modal-hr">
+                <button class="btn">See Live <img src="img/live-icon.svg" alt="live"></button>
+                <button class="btn">See Source <img src="img/github-icon.svg" alt="github"></button>
+              </div>
+            </div>  
           <div>
         </div>
     </div>
