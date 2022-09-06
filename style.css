@@ -631,6 +631,7 @@ textarea {
   font-size: 15px;
   line-height: 24px;
   color: #b3bac5;
+  resize: none;
 }
 
 .contact-btn {
