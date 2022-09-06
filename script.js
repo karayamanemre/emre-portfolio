@@ -110,7 +110,7 @@ const portfolio = [
     modalSeeButtonIcon: '',
     modalSourceButtonText: 'See Source',
     modalSourceButtonIcon: '',
-  }
+  },
 ];
 
 const portfolioSection = document.getElementById('portfolio');
