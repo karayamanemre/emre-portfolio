@@ -36,7 +36,7 @@ header {
   z-index: 1;
 }
 
-.wide-nav {
+.desktop-nav {
   margin-right: 154px;
   display: flex;
   justify-content: space-between;
@@ -204,6 +204,13 @@ nav {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+}
+
+.work-img {
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: calc(100% - 32px);
 }
 
 .card-img {
@@ -533,29 +540,17 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
-  .wide {
+  .desktop {
     display: none;
-  }
-
-  .card1 {
-    background: url(img/Snapshoot-Portfolio-Mobile1.png);
-  }
-
-  .card2 {
-    background: url(img/Snapshoot-Portfolio-Mobile2.png);
-  }
-
-  .card3 {
-    background: url(img/Snapshoot-Portfolio-Mobile3.png);
-  }
-
-  .card4 {
-    background: url(img/Snapshoot-Portfolio-Mobile4.png);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .mobile {
+    display: none;
+  }
+
+  .overlay {
     display: none;
   }
 
@@ -669,22 +664,6 @@ textarea {
 
   .card-reverse {
     flex-direction: row-reverse;
-  }
-
-  .card1 {
-    background: url(img/Snapshoot-Portfolio1.png);
-  }
-
-  .card2 {
-    background: url(img/Snapshoot-Portfolio2.png);
-  }
-
-  .card3 {
-    background: url(img/Snapshoot-Portfolio3.png);
-  }
-
-  .card4 {
-    background: url(img/Snapshoot-Portfolio4.png);
   }
 
   .about-me {
