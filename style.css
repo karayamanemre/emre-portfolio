@@ -362,6 +362,7 @@ nav {
   height: calc(100vh - 150px);
   background-color: #fff;
   border-radius: 16px;
+  transition: 0.4s;
 }
 
 .modal > .card-details {
@@ -393,7 +394,7 @@ nav {
 .modal-image {
   background-color: #fff;
   display: flex;
-  padding-top: 36px;
+  padding-top: 1rem;
 }
 
 .modal-img {
@@ -409,9 +410,8 @@ nav {
 }
 
 .modal-work-info {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 30px;
   background-color: #fff;
 }
 
