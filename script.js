@@ -142,3 +142,59 @@ Array.from(portfolioSection.children).forEach((child, index) => {
   </div>
  `;
 });
+
+const openModal = document.querySelectorAll('.card-button');
+openModal.forEach((element) => {
+  element.addEventListener('click', () => {
+    body.classList.toggle('overflow');
+    const modalWindow = document.createElement('section');
+    modalWindow.classList.add('modal-window');
+    modalWindow.innerHTML = `
+    <div class="modal">
+        <div class="modal-header">
+          <h2 class="modal-title">${portfolio[element.id].cardTitle}</h2>
+          <img class="close" src="img/x-icon.png" alt="close">
+        </div>
+        <ul class="card-details">
+          <li class="company">${portfolio[element.id].company}</li>
+          <li class="circle"><img src="img/circle.png" alt="circle"></li>
+          <li class="job">${portfolio[element.id].job}</li>
+          <li class="circle"><img src="img/circle.png" alt="circle"></li>
+          <li class="year">${portfolio[element.id].year}</li>
+        </ul>
+        <div class="modal-image">
+        <img class="modal-img mobile" src="${portfolio[element.id].cardMobileImage}" alt="">
+        <img class="modal-img desktop" src="${portfolio[element.id].cardDesktopImage}" alt="">
+      </div>
+        <div class="modal-texts">
+          <p class="modal-info">${portfolio[element.id].modalInfo}</p>
+          <div class="tag-btns">
+            <ul class="modal-tags">
+              <li class="tag">${portfolio[element.id].htmlTag}</li>
+              <li class="tag">${portfolio[element.id].cssTag}</li>
+              <li class="tag">${portfolio[element.id].javascriptTag}</li>
+            </ul>
+            <ul class="modal-tags">
+              <li class="github-tag tag">${portfolio[element.id].githubTag}</li>
+              <li class="ruby-tag tag">${portfolio[element.id].rubyTag}</li>
+              <li class="bootstrap-tag tag">${portfolio[element.id].bootstrapTag}</li>
+            </ul>
+            <div class="modal-btns">
+              <button class="btn">See Live <img src="img/live-icon.svg" alt="live"></button>
+              <button class="btn">See Source <img src="img/github-icon.svg" alt="github"></button>
+            </div>
+          <div>
+        </div>
+    </div>
+    `;
+    document.body.appendChild(modalWindow);
+    window.addEventListener('click', (e) => (e.target === modalWindow ? (modalWindow.classList.add('hidden'), body.classList.toggle('overflow')) : false));
+    const closeModal = document.querySelectorAll('.close');
+    closeModal.forEach((el) => {
+      el.addEventListener('click', () => {
+        body.classList.toggle('overflow');
+        modalWindow.classList.add('hidden');
+      });
+    });
+  });
+});
