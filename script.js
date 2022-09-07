@@ -195,4 +195,4 @@ function formValidate() {
   } else {
     error.style.visibility = 'hidden';
   }
-};
+}

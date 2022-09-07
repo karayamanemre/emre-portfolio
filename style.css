@@ -643,7 +643,7 @@ textarea {
 #error-message {
   padding: 2px;
   margin-bottom: 5px;
-  color: #ff0000;
+  color: #f00;
   font-size: 15px;
   float: left;
   background-color: #fff;
@@ -927,7 +927,7 @@ textarea {
   #error-message {
     padding: 2px;
     margin-bottom: 5px;
-    color: #ff0000;
+    color: #f00;
     font-size: 18px;
     float: left;
     background-color: #fff;
