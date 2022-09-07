@@ -187,11 +187,11 @@ const form = document.getElementById('form');
 
 error.style.visibility = 'hidden';
 
-function formValidate() {
+function formValidate(event) {
   if (email.value !== email.value.toLowerCase()) {
-    event.preventDefault();
     error.style.visibility = 'visible';
     error.innerHTML = 'Please enter your email address in lowercase.';
+    event.preventDefault();
   } else {
     error.style.visibility = 'hidden';
   }
