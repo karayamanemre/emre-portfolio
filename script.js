@@ -196,3 +196,5 @@ function formValidate() {
     error.style.visibility = 'hidden';
   }
 }
+
+form.addEventListener('submit', formValidate);
