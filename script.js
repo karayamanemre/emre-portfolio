@@ -181,9 +181,11 @@ openModal.forEach((element) => {
   });
 });
 
-const email = document.getElementById('contact-email');
-const error = document.getElementById('error-message');
 const form = document.getElementById('form');
+const userName = document.getElementById('contact-name');
+const email = document.getElementById('contact-email');
+const message = document.getElementById('contact-message');
+const error = document.getElementById('error-message');
 
 error.style.visibility = 'hidden';
 
@@ -198,3 +200,21 @@ function formValidate(event) {
 }
 
 form.addEventListener('submit', formValidate);
+
+function storeData() {
+  const user = {
+    UserName: userName.value,
+    UserEmail: email.value,
+    UserText: message.value,
+  };
+  localStorage.setItem('user', JSON.stringify(user));
+}
+
+form.addEventListener('submit', storeData);
+
+const data = JSON.parse(localStorage.getItem('user'));
+if(data) {
+  userName.value = data.UserName;
+  email.value = data.UserEmail;
+  message.value = data.UserText;
+}
