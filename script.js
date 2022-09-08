@@ -212,6 +212,10 @@ function storeData() {
 
 form.addEventListener('submit', storeData);
 
+userName.addEventListener('focusout', storeData);
+email.addEventListener('focusout', storeData);
+message.addEventListener('focusout', storeData);
+
 const data = JSON.parse(localStorage.getItem('user'));
 if (data) {
   userName.value = data.UserName;
