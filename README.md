@@ -1,13 +1,22 @@
 # Personal Portfolio
- My personal portfolio project
+ My personal portfolio website project
 
 # Built With
 -HTML
 -CSS
+-JavaScript
 
 # Live Preview
 
 https://karayamanemre.github.io/emre-portfolio/
+
+# Prerequisites
+   - Please install git in your computer.
+   - Also install a code editor.
+   - A web browser to view the output.
+   
+# Setup
+   - To clone my repository run this command `git clone https://github.com/karayamanemre/emre-portfolio.git`  
 
 
 # Author
@@ -21,6 +30,13 @@ https://karayamanemre.github.io/emre-portfolio/
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
+
+# Acknowledgments
+
+[@Samuellekpor]
+[@UsirusenIkon]
+[@Daron976]
+[@lorenzoworx]
 
 # Show your support
 
