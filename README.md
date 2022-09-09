@@ -2,9 +2,9 @@
  My personal portfolio website project
 
 # Built With
--HTML
--CSS
--JavaScript
+  - HTML
+  - CSS
+  - JavaScript
 
 # Live Preview
 
@@ -33,10 +33,10 @@ Feel free to check the issues page.
 
 # Acknowledgments
 
-[@Samuellekpor]
-[@UsirusenIkon]
-[@Daron976]
-[@lorenzoworx]
+[@Samuellekpor](https://github.com/Samuellekpor)
+[@UsirusenIkon](https://github.com/UsirusenIkon)
+[@Daron976](https://github.com/Daron976)
+[@lorenzoworx](https://github.com/lorenzoworx)
 
 # Show your support
 
