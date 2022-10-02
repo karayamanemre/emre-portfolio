@@ -26,7 +26,14 @@ a {
 }
 
 a:hover {
-  filter: brightness(0.8);
+  color: #6070ff;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #7f8cff;
 }
 
 header {
@@ -156,6 +163,8 @@ nav {
   line-height: 52px;
   color: #172b4d;
   margin: 206px 24px 12px 24px;
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 .headline-text {
@@ -166,24 +175,21 @@ nav {
   color: #344563;
 }
 
-.headline-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  text-decoration: none;
+.connect {
   margin-left: 24px;
   margin-bottom: 12px;
 }
 
-.headline-social-icons {
-  height: 20px;
-  width: 170.17px;
-  margin-left: 24px;
+.social-icons {
+  width: 170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+}
+
+.headline-social {
+  margin-left: 24px;
 }
 
 .works {
@@ -453,6 +459,7 @@ nav {
 .about-me-top {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 12px;
   margin-top: 114px;
   margin-left: 24px;
@@ -471,24 +478,6 @@ nav {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-}
-
-.about-me-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  text-decoration: none;
-  margin-bottom: 12px;
-}
-
-.about-me-social-icons {
-  height: 40px;
-  width: 200px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style-type: none;
 }
 
 .resume-button {
@@ -668,6 +657,10 @@ textarea {
   .desktop {
     display: none;
   }
+
+  a:hover {
+    color: #ddd;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -712,8 +705,8 @@ textarea {
     letter-spacing: 0.37px;
     color: #091e42;
     margin: 300px 0 12px 260px;
-    -webkit-animation: headline-track-in 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s both;
-    animation: headline-track-in 2s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s both;
+    -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	  animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   }
 
   .headline-text {
@@ -723,12 +716,12 @@ textarea {
     margin: 0 260px 12px 260px;
   }
 
-  .headline-link {
+  .connect {
     margin: 0 0 16px 260px;
   }
 
-  .headline-social-icons {
-    margin: 0 0 255px 260px;
+  .headline-social {
+    margin: 0 260px;
   }
 
   .works {
@@ -867,12 +860,6 @@ textarea {
     line-height: 24px;
   }
 
-  .about-me-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   .about-me-list {
     margin-top: 142px;
     margin-left: 24px;
@@ -936,17 +923,29 @@ textarea {
   }
 }
 
-@keyframes headline-track-in {
+@-webkit-keyframes text-focus-in {
   0% {
-    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
 
-  40% {
-    opacity: 0.6;
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
   }
 
   100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
     opacity: 1;
   }
 }
