@@ -213,18 +213,12 @@ nav {
 }
 
 .work-img {
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
-  width: calc(100% - 32px);
+  width: 400px;
+  height: 350px;
 }
 
 .card-img {
-  margin-top: 16px;
-  margin-left: 16px;
-  margin-right: 16px;
-  width: 295px;
-  height: 220px;
+  margin: 16px;
 }
 
 .card-title {
@@ -406,6 +400,7 @@ nav {
 .modal-img {
   margin: 0 auto;
   width: 90%;
+  height: auto;
 }
 
 .modal-texts {
@@ -721,7 +716,7 @@ textarea {
   }
 
   .headline-social {
-    margin: 0 260px;
+    margin: 0 260px; 
   }
 
   .works {
@@ -741,9 +736,12 @@ textarea {
     margin: auto;
   }
 
-  .card-img {
+  .work-img {
     width: 544px;
     height: 448px;
+  }
+
+  .card-img {
     margin-left: 24px;
     margin-top: 24px;
     margin-bottom: 24px;

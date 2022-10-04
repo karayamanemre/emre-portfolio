@@ -25,20 +25,22 @@ navItems.forEach((nav) => {
 const portfolio = [
   {
     cardClass: 'works-card card1',
-    cardTitle: 'Tonic',
-    cardDesktopImage: 'img/Snapshoot-Portfolio1.png',
-    cardMobileImage: 'img/Snapshoot-Portfolio-Mobile1.png',
-    company: 'CANOPY',
-    job: 'Back End Dev',
-    year: '2015',
-    cardInfo: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'bootstrap'],
+    cardTitle: 'To Do List',
+    cardDesktopImage: 'img/todolist-screenshot.png',
+    cardMobileImage: 'img/todolist-screenshot.png',
+    company: 'Microverse',
+    job: 'Front-End',
+    year: '2022',
+    cardInfo: 'A minimal "To-do list" app that helps to organize your day. It simply creates a list of the tasks you have to complete along with the option to check them off.',
+    technologies: ['html', 'css', 'javascript', 'webpack'],
     buttonText: 'See More',
-    modalInfo: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    modalInfo: 'A minimal "To-do list" app that helps to organize your day. It simply creates a list of the tasks you have to complete along with the option to check them off. Inspired by the minimalist website. That website is already offline but you can still play with thanks to <a href="https://web.archive.org/web/20180320194056/http://www.getminimalist.com:80/" target="_blank">web.archive.org.</a>',
     modalSeeButtonText: 'See Live',
     modalSeeButtonIcon: '',
     modalSourceButtonText: 'See Source',
     modalSourceButtonIcon: '',
+    modalLiveLink: 'https://karayamanemre.github.io/to-do-list/dist/',
+    modalSourceLink: 'https://github.com/karayamanemre/to-do-list',
   },
   {
     cardClass: 'works-card card2 card-reverse',
@@ -156,13 +158,15 @@ openModal.forEach((element) => {
             </ul>
             <ul class="modal-tags">
               <li class="github-tag tag">${portfolio[element.id].technologies[3]}</li>
-              <li class="ruby-tag tag">${portfolio[element.id].technologies[4]}</li>
-              <li class="bootstrap-tag tag">${portfolio[element.id].technologies[5]}</li>
             </ul>
             <div class="modal-btns">
               <div class="modal-hr">
-                <button class="btn">See Live <img src="img/live-icon.svg" alt="live"></button>
-                <button class="btn">See Source <img src="img/github-icon.svg" alt="github"></button>
+                <a href="${portfolio[element.id].modalLiveLink}" target="_blank">
+                  <button class="btn">See Live <img src="img/live-icon.svg" alt="live"></button>
+                </a>
+                <a href="${portfolio[element.id].modalSourceLink}" target="_blank">
+                 <button class="btn">See Source <img src="img/github-icon.svg" alt="github"></button>
+                </a>
               </div>
             </div>  
           <div>
