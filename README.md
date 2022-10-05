@@ -25,7 +25,7 @@ https://karayamanemre.github.io/emre-portfolio/
 
 - GitHub: [@karayamanemre](https://github.com/karayamanemre)
 - Twitter: [@KarayamanEmre](https://twitter.com/KarayamanEmre)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/emre-karayaman-a7b45b243/)
+- LinkedIn: [Emre Karayaman](https://www.linkedin.com/in/emre-karayaman-a7b45b243/)
 
 # Contributing
 
