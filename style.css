@@ -163,8 +163,9 @@ nav {
   line-height: 52px;
   color: #172b4d;
   margin: 206px 24px 12px 24px;
-  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .headline-text {
@@ -529,7 +530,6 @@ nav {
 .language {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
   background-color: #f7f7f9;
   border-radius: 8px;
 }
@@ -563,7 +563,7 @@ nav {
   border-top-left-radius: 60px;
   background-repeat: no-repeat;
   height: 779px;
-  margin-top: -50px;
+  margin-top: 100px;
 }
 
 .contact-heading {
@@ -700,8 +700,9 @@ textarea {
     letter-spacing: 0.37px;
     color: #091e42;
     margin: 300px 0 12px 260px;
-    -webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	  animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+      both;
+    animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   }
 
   .headline-text {
@@ -716,7 +717,7 @@ textarea {
   }
 
   .headline-social {
-    margin: 0 260px; 
+    margin: 0 260px;
   }
 
   .works {
