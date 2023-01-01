@@ -875,6 +875,7 @@ textarea {
   .languages {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .language {
@@ -883,7 +884,7 @@ textarea {
     margin-right: 12px;
     align-items: flex-start;
     height: 120px;
-    width: 122px;
+    min-width: 100px;
     justify-content: space-around;
   }
 
