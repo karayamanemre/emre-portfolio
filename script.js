@@ -113,6 +113,24 @@ const portfolio = [
     modalLiveLink: 'https://kitaplardananlamayanadam.com',
     modalSourceLink: 'https://kitaplardananlamayanadam.com',
   },
+    {
+    cardClass: 'works-card card5 card-reverse',
+    cardTitle: 'Bookmark Page',
+    cardImage: 'assets/portfolio/bookmark-screenshot.png',
+    company: 'Freelance',
+    job: 'Front-End',
+    year: '2019',
+    cardInfo: 'A web page for saving and storing bookmarks using local storage in browser. Built with JavaScript.',
+    technologies: ['html', 'css', 'javascript', "localstorage"],
+    buttonText: 'See More',
+    modalInfo: 'A web page for saving and storing bookmarks using local storage in browser. Built with JavaScript.',
+    modalSeeButtonText: 'See Live',
+    modalSeeButtonIcon: '',
+    modalSourceButtonText: 'See Source',
+    modalSourceButtonIcon: '',
+    modalLiveLink: 'https://karayamanemre.github.io/bookmark-page/',
+    modalSourceLink: 'https://github.com/karayamanemre/bookmark-page',
+  },
 ];
 
 const portfolioSection = document.getElementById('portfolio');
