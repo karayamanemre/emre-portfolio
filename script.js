@@ -96,7 +96,7 @@ const portfolio = [
     modalSourceLink: 'https://github.com/karayamanemre/weather-app',
   },
   {
-    cardClass: 'works-card card4 card-reverse',
+    cardClass: 'works-card card5 card-reverse',
     cardTitle: 'Kitaplardan Anlamayan Adam',
     cardImage: 'assets/portfolio/kitap-screenshot.png',
     company: 'Freelance',
@@ -112,24 +112,6 @@ const portfolio = [
     modalSourceButtonIcon: '',
     modalLiveLink: 'https://kitaplardananlamayanadam.com',
     modalSourceLink: 'https://kitaplardananlamayanadam.com',
-  },
-  {
-    cardClass: 'works-card card4 card-reverse',
-    cardTitle: 'Weather App',
-    cardImage: 'assets/portfolio/weather-screenshot.png',
-    company: 'Freelance',
-    job: 'Front-End',
-    year: '2022',
-    cardInfo: 'A weather app that pulls weather data from the OpenWeatherMap API to allow users to search for and view the forecast in cities worldwide.',
-    technologies: ['html', 'css', 'javascript', 'openweatherAPI'],
-    buttonText: 'See More',
-    modalInfo: 'A weather app that pulls weather data from the OpenWeatherMap API to allow users to search for and view the forecast in cities worldwide. Background changes according to weather. Built with JavaScript.',
-    modalSeeButtonText: 'See Live',
-    modalSeeButtonIcon: '',
-    modalSourceButtonText: 'See Source',
-    modalSourceButtonIcon: '',
-    modalLiveLink: 'https://karayamanemre.github.io/weather-app/',
-    modalSourceLink: 'https://github.com/karayamanemre/weather-app',
   },
 ];
 
