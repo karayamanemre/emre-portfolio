@@ -26,8 +26,8 @@ const portfolio = [
   {
     cardClass: 'works-card card1',
     cardTitle: 'Crypto Market App',
-    cardDesktopImage: 'img/cryptomarket-screenshot.png',
-    cardMobileImage: 'img/cryptomarket-screenshot.png',
+    cardDesktopImage: 'assets/portfolio/cryptomarket-screenshot.png',
+    cardMobileImage: 'assets/portfolio/cryptomarket-screenshot.png',
     company: 'Microverse',
     job: 'Front-End',
     year: '2022',
@@ -45,8 +45,8 @@ const portfolio = [
   {
     cardClass: 'works-card card2 card-reverse',
         cardTitle: 'To Do List',
-    cardDesktopImage: 'img/todolist-screenshot.png',
-    cardMobileImage: 'img/todolist-screenshot.png',
+    cardDesktopImage: 'assets/portfolio/todolist-screenshot.png',
+    cardMobileImage: 'assets/portfolio/todolist-screenshot.png',
     company: 'Microverse',
     job: 'Front-End',
     year: '2022',
@@ -64,8 +64,8 @@ const portfolio = [
   {
     cardClass: 'works-card card3',
     cardTitle: 'Kanban Board',
-    cardDesktopImage: 'img/kanban-screenshot.png',
-    cardMobileImage: 'img/kanban-screenshot.png',
+    cardDesktopImage: 'assets/portfolio/kanban-screenshot.png',
+    cardMobileImage: 'assets/portfolio/kanban-screenshot.png',
     company: 'Freelance',
     job: 'Front-End',
     year: '2022',
@@ -83,8 +83,8 @@ const portfolio = [
   {
     cardClass: 'works-card card4 card-reverse',
     cardTitle: 'Weather App',
-    cardDesktopImage: 'img/weather-screenshot.png',
-    cardMobileImage: 'img/weather-screenshot.png',
+    cardDesktopImage: 'assets/portfolio/weather-screenshot.png',
+    cardMobileImage: 'assets/portfolio/weather-screenshot.png',
     company: 'Freelance',
     job: 'Front-End',
     year: '2022',
@@ -114,9 +114,9 @@ Array.from(portfolioSection.children).forEach((child, index) => {
       <h2 class="card-title">${portfolio[index].cardTitle}</h2>
       <ul class="card-details">
         <li class="company">${portfolio[index].company}</li>
-        <li class="circle"><img src="img/circle.png" alt="circle"></li>
+        <li class="circle"><img src="assets/icons/circle.png" alt="circle"></li>
         <li class="job">${portfolio[index].job}</li>
-        <li class="circle"><img src="img/circle.png" alt="circle"></li>
+        <li class="circle"><img src="assets/icons/circle.png" alt="circle"></li>
         <li class="year">${portfolio[index].year}</li>
       </ul>
       <p class="card-info">${portfolio[index].cardInfo}</p>
@@ -141,13 +141,13 @@ openModal.forEach((element) => {
     <div class="modal">
         <div class="modal-header">
           <h2 class="modal-title">${portfolio[element.id].cardTitle}</h2>
-          <img class="close" src="img/x-icon.png" alt="close">
+          <img class="close" src="assets/icons/x-icon.png" alt="close">
         </div>
         <ul class="card-details">
           <li class="company">${portfolio[element.id].company}</li>
-          <li class="circle"><img src="img/circle.png" alt="circle"></li>
+          <li class="circle"><img src="assets/icons/circle.png" alt="circle"></li>
           <li class="job">${portfolio[element.id].job}</li>
-          <li class="circle"><img src="img/circle.png" alt="circle"></li>
+          <li class="circle"><img src="assets/icons/circle.png" alt="circle"></li>
           <li class="year">${portfolio[element.id].year}</li>
         </ul>
         <div class="modal-image">
@@ -168,10 +168,10 @@ openModal.forEach((element) => {
             <div class="modal-btns">
               <div class="modal-hr">
                 <a href="${portfolio[element.id].modalLiveLink}" target="_blank">
-                  <button class="btn">See Live <img src="img/live-icon.svg" alt="live"></button>
+                  <button class="btn">See Live <img src="assets/icons/live-icon.svg" alt="live"></button>
                 </a>
                 <a href="${portfolio[element.id].modalSourceLink}" target="_blank">
-                 <button class="btn">See Source <img src="img/github-icon.svg" alt="github"></button>
+                 <button class="btn">See Source <img src="assets/icons/github-icon.svg" alt="github"></button>
                 </a>
               </div>
             </div>  
