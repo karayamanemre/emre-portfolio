@@ -46,12 +46,7 @@ header {
   top: 0;
   z-index: 1;
   background-color: rgba(11, 49, 68, 0.8);
-}
-
-.desktop-nav {
-  margin-right: 154px;
-  display: flex;
-  justify-content: space-between;
+  padding: 0 25px;
 }
 
 .nav-links {
@@ -75,15 +70,12 @@ nav {
   line-height: 20px;
   text-decoration: none;
   color: #ddd;
-  margin-left: 24px;
 }
 
 .menu-bars {
   z-index: 100;
   display: inline;
   cursor: pointer;
-  margin-top: 10px;
-  margin-right: 36px;
 }
 
 .bar1,
@@ -129,7 +121,7 @@ nav {
 }
 
 .mobile-nav-items {
-  margin-left: 28px;
+  margin-left: 25px;
 }
 
 #nav-1,
@@ -148,16 +140,18 @@ nav {
 .headline {
   display: flex;
   flex-direction: column;
-  padding: 0 24px 114px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  min-height: 100vh;
+  padding: 25px;
 }
 
 .headline-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   color: #ddd;
-  margin: 206px 24px 12px 24px;
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     both;
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -166,123 +160,89 @@ nav {
 .headline-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  margin: 0 24px 12px 24px;
   color: #888;
 }
 
-.connect {
-  margin-left: 24px;
-  margin-bottom: 12px;
-}
-
 .social-icons {
-  width: 170px;
   display: flex;
-  justify-content: space-between;
+  gap: 25px;
   align-items: center;
   list-style-type: none;
 }
 
-.headline-social {
-  margin-left: 24px;
-}
-
 .works {
-  margin-top: 114px;
-  margin-left: 24px;
-  margin-right: 24px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 25px;
-}
-
-.works-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
+  justify-content: center;
+  gap: 20px;
+  padding: 100px 25px;
 }
 
-.work-img {
-  width: 400px;
-  height: 350px;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+  padding: 15px;
+  max-width: 400px;
+  height: auto;
+  background: #ddd;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 2px 4px,
+    rgba(0, 0, 0, 0.9) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: 0.5s;
+}
+
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 1) 0px 4px 4px, rgba(0, 0, 0, 0.8) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.6) 0px -3px 0px inset;
 }
 
 .card-img {
-  margin: 16px;
+  border-radius: 10px;
+  border: 2px solid #999;
+  max-width: 100%;
 }
 
 .card-title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 44px;
   color: #172b4d;
-  margin-top: 12px;
-  margin-left: 16px;
 }
 
 .card-details {
   display: flex;
-  align-items: center;
-  margin-top: 20px;
+  align-items: baseline;
   list-style: none;
+  gap: 10px;
 }
 
-.company {
-  margin-right: 12px;
-  margin-left: 16px;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #344563;
-}
-
-.circle {
-  margin-right: 12px;
-}
-
-.job {
-  margin-right: 12px;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #7a869a;
-}
-
+.company,
+.job,
 .year {
   font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #7a869a;
+  font-size: 14px;
+  color: #344563;
 }
 
 .card-info {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 16px;
   color: #344563;
-  margin-top: 20px;
-  margin-right: 16px;
-  margin-left: 16px;
 }
 
 .tags {
   display: flex;
-  margin-top: 12px;
   list-style: none;
-  margin-left: 16px;
+  gap: 10px;
 }
 
 .tag {
-  padding: 4px 12px;
+  padding: 5px 10px;
   background: #999;
-  border-radius: 8px;
-  margin-right: 8px;
+  border-radius: 10px;
   color: #ddd;
   font-weight: 500;
   font-size: 12px;
@@ -290,15 +250,15 @@ nav {
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: #000;
   font-size: 17px;
   font-weight: 500;
-  line-height: 24px;
-  padding: 12px;
-  border: 2px solid #000;
-  border-radius: 8px;
-  margin-bottom: 28px;
-  background: none;
+  padding: 10px;
+  border: 2px solid #999;
+  border-radius: 10px;
   cursor: pointer;
   background-color: #fff;
   transition-property: all;
@@ -307,22 +267,21 @@ nav {
 
 .btn:hover {
   background: #08212f;
+  border: 2px solid #fff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
   color: #fff;
 }
 
-.btn img {
-  filter: brightness(100%);
+.btn svg path {
   transition-duration: 0.9s;
-  margin-left: 13px;
 }
 
-.btn:hover img {
-  filter: brightness(300%);
+.btn:hover svg path {
+  fill: #fff;
 }
 
 .btn:active {
-  background: #2230d2;
+  background: #ddd;
 }
 
 .btn:disabled {
@@ -331,23 +290,20 @@ nav {
   color: #5e6c84;
 }
 
-.card-button {
-  margin-left: 16px;
-  margin-top: 24px;
-  width: 124px;
-}
-
 .modal-window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 101;
   position: fixed;
-  padding: 60px 16px 50px 16px;
+  padding: 25px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   overflow: auto;
   backdrop-filter: blur(3px);
-  background-color: rgba(193, 199, 208, 0.3);
+  background-color: rgba(193, 199, 208, 0.4);
 }
 
 .modal-window.hidden {
@@ -355,97 +311,67 @@ nav {
 }
 
 .modal {
-  background-color: #ddd;
-  border-radius: 16px;
-  margin-bottom: 50px;
-}
-
-.modal > .card-details {
-  margin-left: 10px;
-}
-
-.modal-header {
-  border-radius: 16px;
-  padding-top: 24px;
-  margin-left: 24px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  height: auto;
+  max-height: 90vh;
+  padding: 10px 25px;
+  background-color: #ddd;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 4px 4px, rgba(0, 0, 0, 0.8) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.6) 0px -3px 0px inset;
+}
+
+.close {
+  z-index: 111;
+  align-self: flex-end;
+  cursor: pointer;
 }
 
 .modal-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-}
-
-.close {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  margin-right: 32px;
-}
-
-.modal-image {
-  display: flex;
-  padding-top: 36px;
+  color: #172a4d;
 }
 
 .modal-img {
-  margin: 0 auto;
-  width: 70%;
+  max-width: 90%;
   height: auto;
+  max-height: 500px;
 }
 
-.modal-texts {
-  display: flex;
-  flex-direction: column;
-  padding: 12px 16px 12px 16px;
-}
-
-.modal-work-info {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  border-radius: 16px;
-}
-
-.tag-btns {
-  display: flex;
-  flex-direction: column;
-  padding-top: 12px;
-}
-
-.github-tag,
-.ruby-tag,
-.bootstrap-tag {
-  display: none;
+.modal-info {
+  max-width: 500px;
+  color: #000;
 }
 
 .modal-tags {
   display: flex;
-  justify-content: flex-start;
-  margin-bottom: 20px;
+  gap: 5px;
 }
 
 .modal-btns {
   display: flex;
-  justify-content: space-evenly;
-  margin-right: 20px;
+  gap: 5px;
 }
 
 .about-me {
   display: flex;
   flex-direction: column;
+  padding: 100px 25px;
+  gap: 25px;
+  min-height: 100vh;
 }
 
 .about-me-top {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 12px;
-  margin-top: 114px;
-  margin-left: 24px;
-  margin-right: 24px;
+  gap: 25px;
 }
 
 .about-me-title {
@@ -459,55 +385,32 @@ nav {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #888;
+}
+
+.skill-header {
+  font-size: 22px;
   color: #ddd;
-}
-
-.resume-button {
-  width: 162px;
-  height: 48px;
-}
-
-.about-me-list {
-  margin-top: 36px;
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
-.skills {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-
-.skill-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.skill-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  color: #ddd;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 12px;
+  margin-bottom: 15px;
 }
 
 .languages {
   display: flex;
   flex-direction: column;
   list-style: none;
-  gap: 5px;
+  gap: 15px;
 }
 
 .language {
   display: flex;
   align-items: center;
+  color: #000;
   background-color: #ddd;
-  border-radius: 8px;
-  padding: 5px;
+  border-radius: 10px;
+  padding: 15px;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 2px 4px, rgba(0, 0, 0, 0.8) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.6) 0px -3px 0px inset;
 }
 
 .modal-hr {
@@ -518,31 +421,29 @@ nav {
 .contact {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  gap: 25px;
+  min-height: 100vh;
 }
 
 .contact-heading {
   color: #ddd;
-  margin: 20px;
   font-weight: 700;
   font-size: 40px;
-  line-height: 52px;
 }
 
 .contact-text {
-  margin-bottom: 55px;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #ebebff;
-  margin-left: 24px;
-  margin-right: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #888;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 label {
@@ -551,11 +452,9 @@ label {
 
 .contact-element {
   padding: 15px 38px 15px 16px;
-  margin-bottom: 20px;
-  border: 1px solid #cfd8dc;
+  border: 2px solid #ddd;
   border-radius: 8px;
-  width: 327px;
-  height: 48px;
+  width: 400px;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -563,48 +462,17 @@ label {
 }
 
 textarea {
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  width: 327px;
-  height: 170px;
-  padding: 15px 38px 15px 16px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #b3bac5;
-}
-
-#error-message {
-  padding: 2px;
-  margin-bottom: 5px;
-  color: #f00;
-  font-size: 15px;
-  float: left;
-  background-color: #fff;
-  border-radius: 8px;
-  border: 1px solid #cfd8dc;
+  height: 200px;
 }
 
 .contact-btn {
-  float: left;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 24px;
-  height: 48px;
-  width: 140px;
+  width: 155px;
   background-color: #fff;
-  padding: 12px 16px 12px 16px;
 }
 
 @media only screen and (max-width: 768px) {
   .desktop {
     display: none;
-  }
-
-  a:hover {
-    color: #ddd;
   }
 }
 
@@ -615,10 +483,16 @@ textarea {
 
   header {
     filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.5));
+    padding: 0 100px;
   }
 
   .overlay {
     display: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: space-between;
   }
 
   .nav-links {
@@ -626,133 +500,27 @@ textarea {
   }
 
   .headline {
-    display: flex;
-    flex-direction: column;
+    width: 50%;
+    padding-left: 100px;
   }
 
   .headline-title {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    letter-spacing: 0.37px;
-    margin: 300px 0 12px 260px;
+    letter-spacing: 1.2px;
     -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
       both;
     animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   }
 
   .headline-text {
-    font-weight: 400;
     font-size: 20px;
-    line-height: 28px;
-    margin: 0 260px 12px 260px;
-  }
-
-  .connect {
-    margin: 0 0 16px 260px;
-  }
-
-  .headline-social {
-    margin: 0 260px;
   }
 
   .works {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .works-card {
-    border-radius: 24px;
-    display: flex;
     flex-direction: row;
-    background-color: #ddd;
-    height: 496px;
-    width: 1156px;
-    margin: auto;
-    box-shadow: rgba(0, 0, 0, 0.9) 0px 2px 4px,
-      rgba(0, 0, 0, 0.7) 0px 7px 13px -3px,
-      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  }
-
-  .work-img {
-    width: 544px;
-    height: 448px;
-  }
-
-  .card-img {
-    margin-left: 24px;
-    margin-top: 24px;
-    margin-bottom: 24px;
-  }
-
-  .card-text {
-    width: 544px;
-    height: 445px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 24px;
-  }
-
-  .card-title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-  }
-
-  .company {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .job,
-  .year {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .card-info {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  .card-reverse {
-    flex-direction: row-reverse;
-  }
-
-  .modal-window {
-    padding: 77px 142px;
-  }
-
-  .modal-title {
-    font-size: 40px;
-    line-height: 52px;
-  }
-
-  .modal-texts {
-    display: flex;
-    flex-direction: row;
-    padding-top: 59px;
-    padding-bottom: 59px;
-    border-radius: 16px;
-  }
-
-  .modal-info {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    width: 55%;
-    margin-left: 24px;
-  }
-
-  .modal-btns {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .tag-btns {
@@ -768,36 +536,31 @@ textarea {
   .about-me {
     display: flex;
     flex-direction: row;
-    height: 924px;
+    align-items: center;
+    padding: 0 100px;
   }
 
   .about-me-top {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
-    gap: 24px;
-    width: 447px;
-    height: 392px;
-    margin: 142px 37px 134px 142px;
+    gap: 25px;
+    width: 50%;
   }
 
   .about-me-title {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 1.2px;
   }
 
   .about-me-info {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
   }
 
   .about-me-list {
-    margin-top: 142px;
-    margin-left: 24px;
-    margin-right: 24px;
+    width: 50%;
   }
 
   .skill-item {
@@ -827,30 +590,26 @@ textarea {
     align-items: center;
   }
 
+  .contact-heading {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 1.2px;
+  }
+
   .contact-text {
-    width: 569px;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .contact-form {
+    align-items: center;
   }
 
   .contact-element,
   textarea {
-    width: 447px;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #error-message {
-    padding: 2px;
-    margin-bottom: 5px;
-    color: #f00;
-    font-size: 18px;
-    float: left;
-    background-color: #fff;
-    border-radius: 8px;
-    border: 1px solid #cfd8dc;
+    width: 500px;
   }
 }
 

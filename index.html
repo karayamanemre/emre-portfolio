@@ -39,9 +39,10 @@
       </header>
       <section class="headline" id="headline">
         <h1 class="headline-title">I’m Emre<br>Glad to see you!</h1>
-        <p class="headline-text">I’m a software developer! I can help you build a product, feature or website. Look
-          through some of my work and experience! If you like what you see and have a project you need coded, don’t
-          hesitate to contact me.</p>
+        <p class="headline-text">I work on developing software! I can help you make a product, a website, or a feature
+          for it. Check out some of my <a href="#portfolio">work</a>
+          and what I've done! If you like what you see and need coding for a project, don't be afraid to get in touch.
+        </p>
         <h3 class="connect">LET'S CONNECT</h3>
         <ul class="social-icons headline-social">
           <li><a href="https://twitter.com/KarayamanEmre" target="_blank" rel="noopener"><img
@@ -59,17 +60,27 @@
       </section>
     </main>
     <section id="portfolio" class="works">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
     </section>
     <section class="about-me" id="about">
       <div class="about-me-top">
         <h2 class="about-me-title">About<br>Myself</h2>
-        <p class="about-me-info">Hello I’m a software developer! I can help you build a product , feature or website
-          Look through some of my work and experience! If you like what you see and have a project you need coded, don’t
-          hesitate to contact me.</p>
+        <p class="about-me-info">I attended Microverse Coding School and participated in daily remote team programming
+          sessions.
+
+          Before software development, I managed pubs and restaurants. Although not development-related, I learned
+          problem-solving, effective communication, multitasking, and more. I've been rewarded for my quality and
+          customer
+          service, and I bring the same passion to my software engineering. I'm also a musician and composer. I produce
+          my own
+          music from scratch. I want to use my creativity to design software.
+
+          I've worked asynchronously with colleagues from different time zones and cultures in recent months.</p>
         <h3>LET'S CONNECT</h3>
         <ul class="social-icons">
           <li><a href="https://twitter.com/KarayamanEmre" target="_blank" rel="noopener"><img
@@ -87,49 +98,43 @@
           my resume</button>
       </div>
       <div class="about-me-list">
-        <ul class="skills">
-          <li>
-            <div class="skill-item">
-              <p class="skill-title">Skills</p>
-            </div>
-            <ul class="languages">
-              <li class="language">
-                <img src="assets/icons/ruby.png" alt="ruby logo">
-                <p>Ruby</p>
-              </li>
-              <li class="language">
-                <img src="assets/icons/rails.png" alt="rails logo">
-                <p>Rails</p>
-              </li>
-              <li class="language">
-                <img src="assets/icons/javascript.png" alt="javascript logo">
-                <p>JavaScript</p>
-              </li>
-              <li class="language">
-                <img src="assets/icons/react.png" alt="react logo">
-                <p>React</p>
-              </li>
-              <li class="language">
-                <img src="assets/icons/redux.png" alt="redux logo">
-                <p>Redux</p>
-              </li>
-              <li class="language">
-                <img src="assets/icons/html5.png" alt="html5 logo">
-                <p>HTML</p>
-              </li>
-              <li class="language">
-                <img src="assets/icons/wordpress.png" alt="wordpress logo">
-                <p>Wordpress</p>
-              </li>
-              <li class="language">
-                <img src="assets/icons/css3.png" alt="css3 logo">
-                <p>CSS</p>
-              </li>
-              <li class="language">
-                <img src="assets/icons/bootstrap.png" alt="bootstrap logo">
-                <p>Bootstrap</p>
-              </li>
-            </ul>
+        <p class="skill-header">Skills</p>
+        <ul class="languages">
+          <li class="language">
+            <img src="assets/icons/ruby.png" alt="ruby logo">
+            <p>Ruby</p>
+          </li>
+          <li class="language">
+            <img src="assets/icons/rails.png" alt="rails logo">
+            <p>Rails</p>
+          </li>
+          <li class="language">
+            <img src="assets/icons/javascript.png" alt="javascript logo">
+            <p>JavaScript</p>
+          </li>
+          <li class="language">
+            <img src="assets/icons/react.png" alt="react logo">
+            <p>React</p>
+          </li>
+          <li class="language">
+            <img src="assets/icons/redux.png" alt="redux logo">
+            <p>Redux</p>
+          </li>
+          <li class="language">
+            <img src="assets/icons/html5.png" alt="html5 logo">
+            <p>HTML</p>
+          </li>
+          <li class="language">
+            <img src="assets/icons/wordpress.png" alt="wordpress logo">
+            <p>Wordpress</p>
+          </li>
+          <li class="language">
+            <img src="assets/icons/css3.png" alt="css3 logo">
+            <p>CSS</p>
+          </li>
+          <li class="language">
+            <img src="assets/icons/bootstrap.png" alt="bootstrap logo">
+            <p>Bootstrap</p>
           </li>
         </ul>
       </div>
@@ -146,9 +151,8 @@
         <input type="email" name="contact-mail" placeholder="Your Email" class="contact-element" id="contact-email"
           required>
         <label for="contact-message">Message</label>
-        <textarea name="contact-message" id="contact-message" maxlength="500" placeholder="Write your message here"
-          required></textarea>
-        <p id="error-message">error</p>
+        <textarea name="contact-message" id="contact-message" class="contact-element" maxlength="500"
+          placeholder="Write your message here" required></textarea>
         <button type="submit" class="btn contact-btn">Get In Touch</button>
       </form>
     </section>
