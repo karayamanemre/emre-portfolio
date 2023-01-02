@@ -42,7 +42,7 @@ const portfolio = [
     modalSourceLink: 'https://github.com/karayamanemre/crypto-market-app',
   },
   {
-    cardClass: 'works-card card2 card-reverse',
+    cardClass: 'works-card card2',
         cardTitle: 'To Do List',
     cardImage: 'assets/portfolio/todolist-screenshot.png',
     company: 'Microverse',
@@ -78,7 +78,7 @@ const portfolio = [
     modalSourceLink: 'https://github.com/karayamanemre/kanban-board',
   },
   {
-    cardClass: 'works-card card4 card-reverse',
+    cardClass: 'works-card card4',
     cardTitle: 'Weather App',
     cardImage: 'assets/portfolio/weather-screenshot.png',
     company: 'Freelance',
@@ -96,7 +96,7 @@ const portfolio = [
     modalSourceLink: 'https://github.com/karayamanemre/weather-app',
   },
   {
-    cardClass: 'works-card card5 card-reverse',
+    cardClass: 'works-card card5',
     cardTitle: 'Kitaplardan Anlamayan Adam',
     cardImage: 'assets/portfolio/kitap-screenshot.png',
     company: 'Freelance',
@@ -114,12 +114,12 @@ const portfolio = [
     modalSourceLink: 'https://kitaplardananlamayanadam.com',
   },
     {
-    cardClass: 'works-card card5 card-reverse',
+    cardClass: 'works-card card6',
     cardTitle: 'Bookmark Page',
     cardImage: 'assets/portfolio/bookmark-screenshot.png',
     company: 'Freelance',
     job: 'Front-End',
-    year: '2019',
+    year: '2022',
     cardInfo: 'A web page for saving and storing bookmarks using local storage in browser. Built with JavaScript.',
     technologies: ['html', 'css', 'javascript', "localstorage"],
     buttonText: 'See More',

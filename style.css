@@ -471,8 +471,14 @@ textarea {
 }
 
 .contact-btn {
-  width: 155px;
-  background-color: #fff;
+  width: 300px;
+}
+
+footer {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  color: #999;
 }
 
 @media only screen and (max-width: 768px) {
@@ -618,6 +624,10 @@ textarea {
   .contact-element,
   textarea {
     width: 500px;
+  }
+
+  .contact-btn {
+    width: auto;
   }
 }
 
