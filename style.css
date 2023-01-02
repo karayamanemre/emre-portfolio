@@ -468,6 +468,7 @@ label {
 
 textarea {
   height: 200px;
+  resize: none;
 }
 
 .contact-btn {
