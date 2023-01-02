@@ -42,7 +42,7 @@ h3 {
 
 header {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   z-index: 1;
   background-color: rgba(11, 49, 68, 0.8);
@@ -53,8 +53,6 @@ header {
   color: #ddd;
   font-size: 15px;
   font-weight: 500;
-  padding: 10px 12px;
-  margin-left: 32px;
 }
 
 nav {
@@ -117,7 +115,7 @@ nav {
 }
 
 .overlay-slide-left {
-  transform: translateX(100vw);
+  transform: translateX(-100vw);
 }
 
 .mobile-nav-items {
@@ -461,7 +459,7 @@ label {
   padding: 15px 38px 15px 16px;
   border: 2px solid #ddd;
   border-radius: 8px;
-  width: 400px;
+  width: 300px;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -505,6 +503,8 @@ textarea {
   .nav-links {
     color: #ddd;
     font-size: 20px;
+    padding: 10px 12px;
+    margin-left: 32px;
   }
 
   .headline {
