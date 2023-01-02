@@ -11,9 +11,7 @@
 https://karayamanemre.github.io/emre-portfolio/
 
 # Prerequisites
-   - Please install git in your computer.
-   - Also install a code editor.
-   - A web browser to view the output.
+   - Please install git and the code editor of your choice on your computer.
    
 # Setup
    - To clone my repository run this command `git clone https://github.com/karayamanemre/emre-portfolio.git`  
