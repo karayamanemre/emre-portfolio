@@ -250,6 +250,7 @@ nav {
 .btn {
   display: flex;
   align-items: center;
+  text-align: center;
   gap: 5px;
   color: #000;
   font-size: 17px;
@@ -472,7 +473,7 @@ textarea {
 }
 
 .contact-btn {
-  width: 300px;
+  width: 140px;
 }
 
 footer {
